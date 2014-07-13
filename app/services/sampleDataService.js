@@ -5,10 +5,20 @@ sampleApp.factory('sampleDataService', [function() {
 
 		for(index = 0; index < numberOfRows;index++) {
 			testData.push({
+				      enabled: true,
+				      status:  "F",
+				      type: "type " + index,
 				      id: index,
 							name: "test " + index,
+							units: index,
+							time: new Date(),
+							serviceId: index,
+							driver: {id: 2, name: 'john'},
+							planning: "A;B;C;D",
 							description: "description " + index,
-							otherfieldA: "otherfieldA " + index,
+							groupID: "2345",
+							externalidA: "externalidA " + index,
+							externalidB: "externalidB " + index
 						   });
 		}
 

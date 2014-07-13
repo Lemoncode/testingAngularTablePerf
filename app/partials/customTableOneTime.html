@@ -11,10 +11,21 @@
     </thead>
     <tbody>
       <tr ng-repeat="item in testData">
+        <td>{{::item.enabled}}</td>
+        <td>{{::item.status}}</td>
+        <td>{{::item.type}}</td>
         <td>{{::item.id}}</td>
         <td>{{::item.name}}</td>
+        <td>{{::item.units}}</td>
+        <td>{{::item.time}}</td>
+        <td>{{item.serviceId}}</td>
+        <td>{{item.driver}}</td>
         <td>{{::item.description}}</td>
-        <td>{{::item.otherfieldA}}</td>
+        <td>{{::item.planning}}</td>
+        <td>{{::item.description}}</td>
+        <td>{{::item.groupID}}</td>        
+        <td>{{::item.externalidA}}</td>        
+        <td>{{::item.externalidB}}</td>        
       </tr>
     </tbody>
 </table>

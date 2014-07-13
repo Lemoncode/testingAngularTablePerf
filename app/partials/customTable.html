@@ -1,20 +1,41 @@
 <p>Custom table solution</p>
 
 <table class="table table-condensed table-striped">
-		<thead>
-			<tr>		
-        <th>ID</th>
-        <th>Name</th>
-        <th>Description</th>
-        <th>OtherFieldA</th>
+    <thead>
+		<tr>		
+            <th>Enabled</th>
+            <th>Status</th>
+            <th>Type</th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Units</th>
+            <th>Time (hour)</th>
+            <th>ServiceId</th>
+            <th>Driver</th>
+            <th>Planning</th>
+            <th>Description</th>
+            <th>Group ID</th>
+            <th>ExternalIDA</th>
+            <th>ExternalIDB</th>
 	    </tr>  
     </thead>
     <tbody>
       <tr ng-repeat="item in testData">
+        <td>{{item.enabled}}</td>
+        <td>{{item.status}}</td>
+        <td>{{item.type}}</td>
         <td>{{item.id}}</td>
         <td>{{item.name}}</td>
+        <td>{{item.units}}</td>
+        <td>{{item.time}}</td>
+        <td>{{item.serviceId}}</td>
+        <td>{{item.driver}}</td>
         <td>{{item.description}}</td>
-        <td>{{item.otherfieldA}}</td>
+        <td>{{item.planning}}</td>
+        <td>{{item.description}}</td>
+        <td>{{item.groupID}}</td>        
+        <td>{{item.externalidA}}</td>        
+        <td>{{item.externalidB}}</td>        
       </tr>
     </tbody>
 </table>
