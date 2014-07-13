@@ -1,7 +1,5 @@
-sampleApp.controller('NgGridSolutionController', ['$scope', 'sampleDataService', 
-	        function NgGridSolutionController($scope, sampleDataService){	
+sampleApp.controller('NgGridSolutionController', ['$scope', 
+	        function NgGridSolutionController($scope){	
 
-	$scope.testData = sampleDataService.generateTestDataSync(5000);  
-  $scope.gridOptions = {data: 'testData'};
-
+	$scope.testBinding = "test";	
 }]);
