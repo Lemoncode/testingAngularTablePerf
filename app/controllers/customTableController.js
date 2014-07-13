@@ -1,8 +1,5 @@
 sampleApp.controller('CustomTableController', ['$scope', 'sampleDataService', 
 	        function CustomTableController($scope, sampleDataService){	
 
-	$scope.testData = sampleDataService.generateTestDataSync(3000);
-	$scope.testBinding = "test";	
-
-
+	$scope.testData = sampleDataService.generateTestDataSync(5000);	
 }]);
