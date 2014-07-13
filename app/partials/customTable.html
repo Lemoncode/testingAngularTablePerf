@@ -1,0 +1,21 @@
+<p>Custom table solution</p>
+<p>Test Binding: {{testBinding}}</p>
+
+<table class="table table-condensed table-striped">
+		<thead>
+			<tr>		
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>OtherFieldA</th>
+	    </tr>  
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in testData">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.description}}</td>
+        <td>{{item.otherfieldA}}</td>
+      </tr>
+    </tbody>
+</table>
