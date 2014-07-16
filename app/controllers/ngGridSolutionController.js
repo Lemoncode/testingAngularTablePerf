@@ -16,6 +16,8 @@ sampleApp.controller('NgGridSolutionController', ['$scope', 'sampleDataService',
                                             '/></div>';
 
 	
+$scope.simpleDriver = {id: 1, name: "John Doe" };
+
  $scope.driverTypeaheadSelected = function(entity, selectedItem) {
             entity.driver = selectedItem;
  };
